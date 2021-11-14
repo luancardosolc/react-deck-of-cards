@@ -7,7 +7,12 @@ function NewDeck() {
   return (
     <div>
       <h1>Deck of cards</h1>
-      <div className="table"></div>
+      <div className="table">
+        <div className="add_card">
+          <input type="text" />
+          <button>Add</button>
+        </div>
+      </div>
     </div>
   );
 }

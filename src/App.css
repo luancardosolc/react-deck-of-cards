@@ -25,4 +25,42 @@ h1 {
 .table {
   background-color: #16654c;
   min-height: 50vh;
+  display: flex;
+  padding: 3%;
+}
+
+.add_card {
+  align-self: flex-end;
+}
+
+input {
+  line-height: 2.5em;
+  border: none;
+  border-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 0.1em 2em;
+}
+
+button {
+  padding: 0.82em 1.5em;
+  background-color: #11bb76;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  color: white;
+  margin-left: 0.1em;
+  transition: 0.2s all;
+}
+
+button:hover {
+  background-color: #18de98;
+}
+
+button:active {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
