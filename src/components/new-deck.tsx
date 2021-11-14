@@ -9,7 +9,8 @@ function NewDeck() {
       <h1>Deck of cards</h1>
       <div className="table">
         <div className="add_card">
-          <input type="text" />
+          <label htmlFor="card_input">Add cards to the pile</label>
+          <input type="text" name="card_input"/>
           <button>Add</button>
         </div>
       </div>
