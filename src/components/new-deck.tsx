@@ -1,16 +1,13 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { toast } from 'react-toastify';
 
 function NewDeck() {
-  useEffect(() => {
-    notify('testing');
-  }, []);
-
   const notify = (msg: string) => toast.success(msg);
 
   return (
     <div>
-      <h1>Deck of Cards</h1>
+      <h1>Deck of cards</h1>
+      <div className="table"></div>
     </div>
   );
 }
