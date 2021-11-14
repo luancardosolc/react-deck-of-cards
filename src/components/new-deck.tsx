@@ -3,7 +3,7 @@ import React from 'react';
 function NewDeck() {
   return (
     <div>
-      <p>New Deck</p>
+      <h1>Deck of Cards</h1>
     </div>
   );
 }
