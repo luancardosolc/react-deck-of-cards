@@ -9,7 +9,19 @@ function NewDeck() {
       <h1>Deck of cards</h1>
       <div className="table table-body">
         <div className="addeded_cards">
-          <div className="card"></div>
+          <div className="card">
+            <div className="card-topleft">
+              <div className="card-corner-rank">3</div>
+              <div className="card-corner-suit">♠︎</div>
+            </div>
+            <div className="card-suits">
+              <div className="card-suit">♠︎</div>
+            </div>
+            <div className="card-bottomright">
+              <div className="card-corner-rank">3</div>
+              <div className="card-corner-suit">♠︎</div>
+            </div>
+          </div>
           <div className="card"></div>
           <div className="card"></div>
           <div className="card"></div>

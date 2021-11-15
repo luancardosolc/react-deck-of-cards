@@ -115,6 +115,10 @@ label {
   overflow-x: scroll;
 }
 
+.addeded_cards > :first-child {
+  margin-left: 0px;
+}
+
 .card {
   height: 7em;
   min-width: 5em;
@@ -123,10 +127,40 @@ label {
   border-radius: 0.5em;
   margin-left: 30px;
   box-shadow: 0 0.0625em 0.125em rgba(0, 0, 0, 0.15);
+  color: black;
 }
 
-.addeded_cards > :first-child {
-  margin-left: 0px;
+.card-topleft {
+  top: 0.5em;
+  left: 0.75em;
+  padding-left: 0.2em;
+}
+
+.card-bottomright {
+  bottom: 0.5em;
+  right: 0.75em;
+  transform: rotate(180deg);
+  padding-left: 0.2em;
+}
+
+.card-suits {
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-suit {
+  font-size: 1.7em;
+}
+
+.card-corner-rank, .card-corner-suit {
+  font-size: 1.05em;
+  line-height: 1.25;
+}
+
+.card-suit.mirrored {
+  transform: rotate(180deg);
 }
 
  /* width */
