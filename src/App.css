@@ -29,7 +29,7 @@ h1 {
 }
 
 .table-body {
-  min-height: 12em;
+  min-height: 8em;
 }
 
 .table-controls {
@@ -116,12 +116,13 @@ label {
 }
 
 .card {
-  height: 9em;
-  min-width: 6em;
+  height: 7em;
+  min-width: 5em;
   background-color: white;
   border: black solid;
   border-radius: 0.5em;
   margin-left: 30px;
+  box-shadow: 0 0.0625em 0.125em rgba(0, 0, 0, 0.15);
 }
 
 .addeded_cards > :first-child {
