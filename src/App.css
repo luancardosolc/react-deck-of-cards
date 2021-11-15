@@ -24,9 +24,17 @@ h1 {
 
 .table {
   background-color: #16654c;
-  min-height: 50vh;
   display: flex;
   padding: 3%;
+}
+
+.table-body {
+  min-height: 12em;
+}
+
+.table-controls {
+  min-height: 1em;
+  padding-top: 0;
 }
 
 .add_card {
@@ -100,3 +108,45 @@ label {
   border: white solid;
   width: 35%;
 }
+
+.addeded_cards {
+  display: flex;
+	flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+
+.card {
+  height: 9em;
+  min-width: 6em;
+  background-color: white;
+  border: black solid;
+  border-radius: 0.5em;
+  margin-left: 30px;
+}
+
+.addeded_cards > :first-child {
+  margin-left: 0px;
+}
+
+ /* width */
+ /* To make the scrollbar visible, uncomment the width */
+ ::-webkit-scrollbar {
+  /* width: 1px; */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #186a50;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #115943;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0f4f3c;
+} 

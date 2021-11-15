@@ -7,7 +7,22 @@ function NewDeck() {
   return (
     <div>
       <h1>Deck of cards</h1>
-      <div className="table">
+      <div className="table table-body">
+        <div className="addeded_cards">
+          <div className="card"></div>
+          <div className="card"></div>
+          <div className="card"></div>
+          <div className="card"></div>
+          <div className="card"></div>
+          <div className="card"></div>
+          <div className="card"></div>
+          <div className="card"></div>
+          <div className="card"></div>
+          <div className="card"></div>
+
+        </div>
+      </div>
+      <div className="table table-controls">
         <div className="add_card">
           <label htmlFor="card_input">Add cards to the pile</label>
           <input type="text" name="card_input" />
