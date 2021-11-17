@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { toast } from 'react-toastify';
 import Card from './card';
 
@@ -29,36 +29,35 @@ function NewDeck() {
       return;
     }
 
+    if (pile.length >= 10) {
+      notifyError('The pile already contains 10 cards!');
+      return;
+    }
+
     setPile([...pile, cardInput]);
-    console.log('pile', pile);
     notifySuccess(`Card '${cardInput}' added to the pile.`);
 
     //TODO: Add in the strenght order
     //TODO: pile variable to html table
   }
 
+  let items: Array<any> = [];
+  pile.forEach((item) => {
+    items.push(<Card cardValue={item.slice(0, 1)} cardSuit={item.slice(1, 2)} key={item}/>);
+  })
+
   return (
     <div>
       <h1>Deck of cards</h1>
       <div className="table table-body">
         <div className="addeded_cards">
-          <Card cardSuit="S" cardValue="3" />
-          <div className="card"></div>
-          <div className="card"></div>
-          <div className="card"></div>
-          <div className="card"></div>
-          <div className="card"></div>
-          <div className="card"></div>
-          <div className="card"></div>
-          <div className="card"></div>
-          <div className="card"></div>
-
+          {items}
         </div>
       </div>
       <div className="table table-controls">
         <div className="add_card">
           <label htmlFor="card_input">Add cards to the pile</label>
-          <input type="text" name="card_input" maxLength={2} value={cardInput} onChange={handleChange} />
+          <input placeholder="Value Suit" type="text" name="card_input" maxLength={2} value={cardInput} onChange={handleChange} />
           <button onClick={addCardToPile}>Add</button>
         </div>
       </div>

@@ -2,14 +2,17 @@ import React, { useEffect, useState } from 'react';
 
 function Card(props: { cardSuit: any; cardValue: {} | null | undefined; }) {
   const [suitSymbol, setSuitSymbol] = useState('');
+  const [color, setColor] = useState('card black');
 
   useEffect(() => {
     switch (props.cardSuit) {
       case 'H':
         setSuitSymbol('♥');
+        setColor('card red');
         break;
       case 'D':
         setSuitSymbol('♦');
+        setColor('card red');
         break;
       case 'C':
         setSuitSymbol('♣');
@@ -22,7 +25,7 @@ function Card(props: { cardSuit: any; cardValue: {} | null | undefined; }) {
   }, [props]);
 
   return (
-    <div className="card">
+    <div className={color}>
       <div className="card-topleft">
         <div className="card-corner-rank">{props.cardValue}</div>
         <div className="card-corner-suit">{suitSymbol}</div>
